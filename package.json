@@ -1,0 +1,35 @@
+{
+  "name": "should-throw-instanceof",
+  "version": "1.0.0",
+  "description": "Helper function for more detailed error assertions than should.throw",
+  "license": "BSD-2-Clause",
+  "main": "src/should-throw-instanceof.js",
+  "scripts": {
+    "jscs": "jscs --config node_modules/bodylabs-javascript-style/jscs/jscsrc-shared src --extract '*.js'",
+    "eslint": "eslint --config node_modules/bodylabs-javascript-style/eslint/eslintrc-shared.yml 'src/*.js'",
+    "lint": "npm run jscs && npm run eslint",
+    "unittest": "mocha src/*.spec.js",
+    "test": "npm run unittest && npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bodylabs/should-throw-instanceof.git"
+  },
+  "engines": {
+    "node": "5.8.0",
+    "npm": "3.5.x"
+  },
+  "dependencies": {
+    "underscore": "~1.8.3"
+  },
+  "peerDependencies": {
+    "should": "*"
+  },
+  "devDependencies": {
+    "bodylabs-javascript-style": "~4.0.0",
+    "eslint": "^2.4.0",
+    "jscs": "^2.8.0",
+    "mocha": "^2.3.4",
+    "should": "^8.1.1"
+  }
+}
